@@ -135,3 +135,17 @@ if (icon && maan && ster) {
         icon.style.transform = "scale(1)";
     }, 4500);
 }
+
+
+const headerBox = document.getElementById('projecten-header-box');
+
+if (headerBox) {
+    headerBox.style.opacity = 0;
+    headerBox.style.transform = 'translateY(40px)';
+    headerBox.style.transition = 'opacity 0.8s ease-out, transform 0.8s ease-out';
+
+    setTimeout(() => {
+        headerBox.style.opacity = 1;
+        headerBox.style.transform = 'translateY(0)';
+    }, 200);
+}
