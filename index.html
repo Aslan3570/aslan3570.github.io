@@ -4,111 +4,40 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aslan Oral</title>
+    <title>Welkom - Intro</title>
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background: black;
+            color: white;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        #intro-box {
+            height: 100vh;
+        }
+        
+        #welcomeText {
+            font-size: 4rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.5s ease;
+        }
+    </style>
 </head>
 
-<body class="text-white">
+<body class="d-flex justify-content-center align-items-center">
 
+    <div id="intro-box" class="d-flex flex-column justify-content-center align-items-center">
+        <h1 id="welcomeText">Welkom</h1>
+        <p class="text-secondary mt-3">Klik om te beginnen</p>
+    </div>
 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-black">
-        <a class="navbar-brand d-flex align-items-center" href="index.html">
-            <svg id="turkse-icon" width="40" height="40" viewBox="0 0 100 100">
-        
-        <path id="maan" d="M50 15
-                 A35 35 0 1 0 50 85
-                 A25 25 0 1 1 50 15Z"
-              fill="none" stroke="white" stroke-width="6" />
-
-    
-        <polygon id="ster" points="70,50 78,55 75,45 85,45 77,40 80,30 70,36 60,30 63,40 55,45 65,45 62,55"
-                 fill="none" stroke="white" stroke-width="6" />
-    </svg>
-        </a>
-
-
-
-        <div class="collapse navbar-collapse" id="navMenu">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="projecten.html">Projecten</a></li>
-                <li class="nav-item"><a class="nav-link" href="over-website.html">Over deze website</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-        </div>
-    </nav>
-
-    <header class="d-flex align-items-center justify-content-center text-center" style="min-height: 90vh;
-               background-image: url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80');
-               background-size: cover;
-               background-position: center;">
-
-        <div class="bg-dark bg-opacity-75 p-5 rounded">
-            <h1 class="display-3 fw-bold">Welkom</h1>
-            <p class="lead mb-4"></p>
-
-            <div class="d-flex gap-3 justify-content-center">
-                <a href="projecten.html" class="btn btn-light btn-lg">
-                    <i class="bi bi-folder"></i> Mijn Projecten
-                </a>
-                <a href="contact.html" class="btn btn-outline-light btn-lg">
-                    <i class="bi bi-envelope"></i> Contact
-                </a>
-            </div>
-        </div>
-    </header>
-
-    <section id="overmij" class="container py-5">
-        <div class="row align-items-center g-5">
-
-            <div class="col-12 col-md-6" id="overmij-tekst">
-                <div class="p-4 bg-black bg-opacity-50 rounded shadow-lg">
-                    <h2 class="fw-bold mb-3">Over mij</h2>
-                    <p class="lead">
-                        Ik ben Aslan, een enthousiaste student software development. Ik heb sinds kleins af een beperking, maar dat houd me niet tegen om een top developer te worden
-                    </p>
-
-                    <div class="mt-4">
-                        <div class="d-flex align-items-center mb-2">
-                            <i class="bi bi-code-slash fs-3 me-3 text-info"></i>
-                            <span>Webontwikkeling</span>
-                        </div>
-
-                        <div class="d-flex align-items-center">
-                            <i class="bi bi-lightbulb fs-3 me-3 text-primary"></i>
-                            <span>Creatieve projecten</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-md-6 text-center" id="overmij-foto">
-                <div class="p-3 bg-black bg-opacity-50 rounded shadow-lg">
-                    <img src="img/Media (27).jpg" class="img-fluid rounded shadow-lg" alt="Aslan" id="overmij-img">
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-
-
-    <footer class="bg-black text-white py-4 mt-5">
-        <div class="container text-center">
-            <p class="mb-2">Aslan Oral</p>
-            <a href="https://www.linkedin.com/in/aslan-oral-b50303410/" target="_blank" class="text-white fs-3">
-                <i class="bi bi-linkedin"></i>
-            </a>
-            <p class="mt-3 mb-0">© 2026 Aslan Portfolio</p>
-        </div>
-    </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js" defer></script>
+    <script src="js/intro.js" defer></script>
 </body>
 
 </html>

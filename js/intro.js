@@ -49,7 +49,7 @@ function cycleLanguages() {
                 clearInterval(interval);
 
                 setTimeout(() => {
-                    window.location.href = "index.html";
+                    window.location.href = "home.html";
                 }, 500);
             }
 
