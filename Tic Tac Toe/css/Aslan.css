@@ -1,0 +1,187 @@
+
+:root {
+    --bg-dark: #0f3b4a;
+    --bg-header: #1e90c8;
+    --bg-light: #7bbcff;
+    --bg-hover: #4cc9f0;
+    --border-color: #4cc9f0;
+    --text-light: #ffffff;
+    --text-dark: #fdfdfd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #18aace;
+}
+
+.grid-container {
+    width: min(90%, 800px);
+    margin: 30px auto;
+display: grid;                      ;
+    grid-template-rows: 100px 80px 1fr 80px;
+    background-color: var(--bg-dark);
+    border: 2px solid var(--border-color);
+}
+
+.hidden {
+    display: none;
+}
+
+.header-item {
+    background-color: var(--bg-header);
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 0 20px;
+    color: var(--text-light);
+}
+
+
+.header-item h1 {
+    grid-column: 2;
+    text-align: center;
+}
+
+
+
+.text-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+}
+
+.main-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.buttons {
+    display: flex;
+    gap: 30px;
+}
+.reset-btn{
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+.guide-text {
+    background: none;
+    border: none;
+    padding: 20px;
+    color: rgb(255, 249, 249); 
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.guide-btn {
+    justify-self: end;
+}
+
+.guide-link {
+    padding: 10px 20px;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+.buttons button {
+    padding: 15px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    transition: background-color 0.2s;
+}
+
+.buttons button:hover {
+    background-color: var(--bg-hover);
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-light);
+    margin-top: 30px;
+}
+
+.game-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.player-name, .score {
+    background-color: var(--bg-light);
+    color: var(--text-dark);
+    padding: 8px 14px;
+    font-weight: bold;
+}
+
+.tictactoe-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-template-rows: repeat(3, 80px);
+    gap: 4px;
+    margin-top: 15px;
+}
+
+.cell {
+    background-color: var(--bg-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.guide-link:hover {
+    background-color: var(--bg-hover);
+}
+.reset-btn:hover {
+    background-color: var(--bg-hover);
+}
+
+.cell:hover {
+    background-color: var(--bg-hover);
+}
+
+.footer-item {
+    background-color: var(--bg-header);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-light);
+}
