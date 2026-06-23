@@ -1,3 +1,22 @@
+const projects = document.querySelectorAll('.project');
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.remove('opacity-0');
+            entry.target.classList.add('opacity-100');
+        }
+    });
+}, { threshold: 0.2 });
+
+projects.forEach(project => observer.observe(project));
+
+
+
+
+
+
+
 // const title = document.getElementById("title");
 // const turkey = document.getElementById("turkey");
 // const moon = document.getElementById("moon");
